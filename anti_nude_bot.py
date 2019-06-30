@@ -16,7 +16,7 @@ import nude
 import shutil
 from nude import Nude
 
-API_TOKEN = os.getenv('TOKEN') #645361521:AAH3RJjl_XEI4sXITXU4FuJoKfTJpFjOVuY
+API_TOKEN = os.getenv('TOKEN')
 
 REG_GROUP = os.getenv('REGISTER')
 
