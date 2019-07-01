@@ -163,9 +163,6 @@ def check_nude_image(bot, update):
 def main():
 	updater = Updater(token=API_TOKEN)
 	dispatcher = updater.dispatcher
-
-	# saida
-	dispatcher.add_handler(MessageHandler(Filters.status_update.left_chat_member, saida))
 	
 	# filtrar imagens
 	dispatcher.add_handler(MessageHandler(Filters.photo, check_nude_image))
