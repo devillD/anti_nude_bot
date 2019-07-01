@@ -151,7 +151,10 @@ def main():
 	dispatcher.add_handler(MessageHandler(Filters.status_update.left_chat_member, saida))
 	
 	# filtrar imagens
-	dispatcher.add_handler(MessageHandler(Filters.photo, check_nude))
+	dispatcher.add_handler(MessageHandler(Filters.photo, check_nude_image))
+	
+	# filtrar stickers
+	dispatcher.add_handler(MessageHandler(Filters.sticker, check_nude_sticker))
 
 	rodar(updater)
 
