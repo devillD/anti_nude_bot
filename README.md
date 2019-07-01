@@ -1,8 +1,8 @@
 # anti_nude_bot
 Este bot bloqueia o envio de imagens pornográficas no grupo. Este precisa de acesso administrativo do grupo, para banir os mal intencionados. É necessário, também, criar um canal para adicionar ao REG_GROUP, para registrar os banidos.
 
-## nudepy [descontinuado]
-A biblioteca usada não é tão eficaz, mas pega até hentai explicito. **Recomendo não usar o bot, pois há MUITOS falsos positivos (fotos de casas, pássaros, takagi-san etc.), que fazem com que o usuário seja que enviou a mídia seja banido.**
+## nudity
+A biblioteca usada tem uma eficácia de 90%. Ela pega, também, hentai explícito. Está sendo usada agora porque a antiga biblioteca (nudepy), além de descontinuada, era ineficaz (bania usuário que mandava fotos da takagi-san, fotos de casas e outras).
 
 ## Configuração Heroku
 Estas são as chaves necessárias da configuração de variávels para que o bot funcione de maneira eficaz:
