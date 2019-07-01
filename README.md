@@ -5,7 +5,7 @@ Este bot bloqueia o envio de imagens pornográficas no grupo. Este precisa de ac
 A biblioteca usada tem uma eficácia de 90%. Ela pega, também, hentai explícito. Está sendo usada agora porque a antiga biblioteca (nudepy), além de descontinuada, era ineficaz (bania usuário que mandava fotos da takagi-san, fotos de casas e outras).
 
 ## Configuração Heroku
-**Sugestão: o plano grátis do Heroku não permite o bom uso do bot, pois este excede a memória limite.**
+**Sugestão: o plano grátis do Heroku não permite o bom uso do bot, pois este excede a memória limite, então sugiro assinar um bom plano ou comprar um servidor privado para o bot.**
 Estas são as chaves necessárias da configuração de variávels para que o bot funcione de maneira eficaz:
 
 | KEY       | VALUE     |
