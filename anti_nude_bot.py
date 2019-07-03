@@ -1,5 +1,6 @@
 #coding: utf-8
 #!/usr/bin/python3.7
+#Bot anti-nude do sam
 
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 from telegram.ext.dispatcher import run_async
