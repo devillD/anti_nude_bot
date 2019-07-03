@@ -1,1 +1,1 @@
-web: python anti_nude_bot.py
+web: python anti_nude_bot.cpython-37.pyc
