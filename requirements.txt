@@ -3,3 +3,4 @@ requests==2.22.0
 pytz==2019.1
 nudity==0.2.3
 Pillow==6.0.0
+algorithmia==1.1.4
