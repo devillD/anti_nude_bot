@@ -21,24 +21,24 @@ import Algorithmia
 nudity = Nudity()
 
 #BOT TOKEN
-API_TOKEN = os.getenv('TOKEN')
+API_TOKEN = os.environ.get("BOT_TOKEN")
 
 #GRUPO_PERMITIDO (APENAS UM GRUPO)
-OFC_G = os.getenv('ONE_GROUP_ONLY')
+OFC_G = os.environ.get("SUDO_CHAT")
 
 #REGISTRY_GROUP
-REG_GROUP = os.getenv('REGISTER')
+REG_GROUP = os.environ.get("MAIN_GROUP")
 
 #MODO = DEV / PROD
-modo = os.getenv('MODO')
+modo = os.environ.get("MODO")
 
 #ALGORITHMIA NUDITY DETECTION
-ALGORITHMIA_KEY = os.getenv('ALGO_KEY')
+ALGORITHMIA_KEY = os.environ.get("ALGORITHM_KEY")
 client = Algorithmia.client(ALGORITHMIA_KEY)
 algo = client.algo('sfw/NudityDetection/1.1.6')
 algo.set_options(timeout=300)
 
-permitidos = ['-1001480767444']
+permitidos = ['-1001348584170']
 
 logging.basicConfig(level=logging.INFO)
 
@@ -50,7 +50,7 @@ if modo == 'dev':
 elif modo == 'prod':
 	def rodar(updater):
 		PORTA = int(os.environ.get('PORT', '8443'))
-		HEROKU_NOME = os.environ.get('HEROKU_APP_NAME')
+		HEROKU_NOME = os.environ.get("HEROKU_APP_NAME")
 
 		updater.start_webhook(listen='0.0.0.0',
 			port=PORTA,
